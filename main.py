@@ -17,7 +17,7 @@ def init():
 	print("Loaded Model from disk")
 
 	loaded_model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['accuracy'])
-	graph = tf.get_default_graph()
+	graph = tf.compat.v1.get_default_graph()
 	return loaded_model,graph
 
 model, graph = init()
