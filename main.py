@@ -36,7 +36,7 @@ def convertImage(imgData1):
 	with open('output.png','wb') as output:
 		output.write(base64.b64decode(imgstr))
 
-@app.route('/predict/',methods=['GET','POST'])
+@app.route('/predict/',methods=['POST'])
 def predict():
 	global sess
 	global graph
