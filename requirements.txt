@@ -1,0 +1,5 @@
+tensorflow-cpu
+numpy
+Flask
+uwsgi
+Pillow
