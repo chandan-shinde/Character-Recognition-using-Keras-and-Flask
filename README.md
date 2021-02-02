@@ -5,7 +5,7 @@ A simple web app which can recognize handwritten english character, using keras 
  run `pip install -r requirements.txt` to install dependencies
 
 to run the app, run following command :  
- - uwsgi --socket 0.0.0.0:5000 --protocol=http -w wsgi:app
+ - `uwsgi --socket 0.0.0.0:5000 --protocol=http -w wsgi:app`
 
 this will run app on port 5000
 
